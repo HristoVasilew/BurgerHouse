@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DeliveryApp.App">
+    <Application.Resources>
+
+        <!-- Color for the light theme -->
+        
+        <Color x:Key="LightPageBackgroundColor">WhiteSmoke</Color>
+        <Color x:Key="LightSecondaryBackgroundColor">#B2DFDB</Color>
+        <Color x:Key="LightInnerBackgroundColor">#f1f1f3</Color>
+        <Color x:Key="LightCounterBackgroundColor">LightGray</Color>
+        <Color x:Key="LightPrimaryTextColor">Black</Color>
+        <Color x:Key="LightSecondaryTextColor">Gray</Color>
+        <Color x:Key="LightContextTextColor">Black</Color>
+        <Color x:Key="LightFooterTextColor">#455A64</Color>
+        <Color x:Key="LightDefaultButtonColor">#455A64</Color>
+        <Color x:Key="LightInfoButtonColor">#455A64</Color>
+        <Color x:Key="LightUpDownButtonColor">#455A64</Color>
+
+        <Color x:Key="LightTitleTextColor">#455A64</Color>
+        <Color x:Key="LightContentTextColor">#455A64</Color>
+        
+        <Style x:Key="ButtonStyle"
+               TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light={StaticResource LightDefaultButtonColor}}" />
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryTextColor}}" />
+            <Setter Property="HeightRequest"
+                    Value="45" />
+            <Setter Property="WidthRequest"
+                    Value="190" />
+            <Setter Property="CornerRadius"
+                    Value="18" />
+        </Style>
+
+        <Style x:Key="PrimaryLabel" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}}" />
+        </Style>
+
+        <Style x:Key="SecondaryLabel" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightSecondaryTextColor}}" />
+        </Style>
+
+        <Style x:Key="PrimaryLabelHeader" TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}}" />
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+
+        <Style x:Key="PrimaryLabelSubHeader" TargetType="Label">
+            <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource LightPrimaryTextColor}}" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+    </Application.Resources>
+</Application>
